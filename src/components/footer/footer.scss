@@ -1,0 +1,112 @@
+.footer {
+  background: #3D4050;
+}
+
+.footer__content {
+  min-height: 80px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+
+  @media ($tablet) {
+    display: block;
+  }
+}
+.footer__copyright {
+  font-size: 1.3rem;
+  line-height: 1.23;
+  color: #FFFFFF;
+  margin-right: 40px;
+  width: 26%;
+
+  @media ($tablet) {
+    width: 100%;
+  }
+}
+.footer__line {
+  width: 1px;
+  height: 18px;
+  background: #C3C3C3;
+  @media ($tablet) {
+    width: 30px;
+    height: 1px;
+    margin: 15px 0;
+  }
+}
+.footer__money {
+  margin-right: 37px;
+  margin-left: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: -15px;
+  list-style-type: none;
+  flex: 1 1 auto;
+
+  @media ($tablet) {
+    justify-content: flex-start;
+    margin-left: -30px;
+    margin-right: 0;
+  }
+}
+.footer__money_item {
+  margin: 0 10px 15px;
+  color: #C3C3C3;
+  padding-left: 30px;
+  font-size: 1.3rem;
+  line-height: 1.23;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  @media ($tablet) {
+    margin: 0 0 15px 30px;
+  }
+
+  &.footer__money_item--qiwi {
+    background: url('../img/footer/money/1.png') 0 0 / 20px 20px no-repeat;
+  }
+  &.footer__money_item--yandex {
+    background: url('../img/footer/money/2.png') 0 0 / 20px 20px no-repeat;
+  }
+  &.footer__money_item--web {
+    background: url('../img/footer/money/3.png') 0 0 / 20px 20px no-repeat;
+  }
+}
+.footer__links {
+  margin-left: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -15px;
+  width: 26%;
+  justify-content: space-between;
+  @media ($tablet) {
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: -30px;
+  }
+}
+.footer__link {
+  margin: 0 10px 15px;
+  font-size: 1.3rem;
+  line-height: 1.23;
+  color: #FFFFFF;
+  transition: 0.3s;
+  padding-left: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  @media ($tablet) {
+    margin: 0 0 15px 30px;
+  }
+  &:hover {
+    @media ($tabletMax) {
+      color: #43ABF0;
+    }
+  }
+  &.footer__link--mail {
+    background: url('../img/footer/links/1.png') 0 0 / 20px 20px no-repeat;
+  }
+  &.footer__link--vk {
+    background: url('../img/footer/links/2.png') 0 0 / 20px 20px no-repeat;
+  }
+}

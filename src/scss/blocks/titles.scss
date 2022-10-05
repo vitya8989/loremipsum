@@ -1,0 +1,32 @@
+h1, h2 {
+  span {
+    color: #3E9CDC;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.21;
+  text-transform: uppercase;
+
+  @media ($tablet) {
+    br {
+      display: none;
+    }
+  }
+  @media ($mobile) {
+    font-size: 3.2rem;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.6rem;
+  line-height: 1.19;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  @media ($mobile) {
+    font-size: 2rem;
+  }
+}

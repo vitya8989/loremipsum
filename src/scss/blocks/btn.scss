@@ -1,0 +1,57 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 43px;
+  padding: 5px 20px;
+  background: #3E9CDC;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  line-height: 1.23;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    @media ($tabletMax) {
+      background: #267bb5;
+      border-color: #267bb5;
+    }
+  }
+
+  &.btn--wh {
+    background: #FFFFFF;
+    border: 1px solid #6F6D7B;
+    color: #2A2B30;
+    &:hover {
+      @media ($tabletMax) {
+        background: #9db5c4;
+        color: #FFFFFF;
+        border-color: #9db5c4;
+      }
+    }
+    &.btn--border_color {
+      border: 2px solid #3E9CDC;
+    }
+  }
+  &.btn--svg {
+    svg {
+      margin-right: 10px;
+      path {
+        transition: 0.3s;
+      }
+    }
+    &:hover {
+      @media ($tabletMax) {
+        svg {
+          path {
+            fill: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

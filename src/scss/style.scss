@@ -1,0 +1,64 @@
+@import "null";
+@import "variables";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts";
+
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 1.8rem;
+	line-height: 1.22;
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	color: #000000;
+	@media ($mobile) {
+		font-size: 1.4rem;
+	}
+
+	&.scroll-lock {
+		overflow: hidden;
+	}
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1212px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@media($tablet) {
+		padding: 0 15px;
+	}
+}
+.main {
+	flex: 1 0 auto;
+}
+
+@import "./blocks/btn";
+@import "./blocks/titles";
+
+@import "../components/header/header";
+@import "../components/main/top/top";
+@import "../components/main/order/order";
+@import "../components/footer/footer";
+
+
+
+
+
